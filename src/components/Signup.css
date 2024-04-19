@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f8fafa,#fff);
+}
+
+.main-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px; /* Added max-width for better responsiveness */
+    width: 90%; /* Added width to ensure it doesn't go beyond the screen */
+    margin: 100px auto; /* Centering the form horizontally */
+}
+
+.signup-name, .signup-mail, .signup-pass {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+.main-signup h1 {
+    color: rgb(41, 9, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .main-signup {
+        margin: 100px 300px; /* Adjust margin for larger screens */
+    }
+}
