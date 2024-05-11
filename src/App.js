@@ -7,23 +7,25 @@ import LecturePage from './components/LecturePage';
 import SubmissionPage from './components/SubmissionPage';
 import Login from './components/Login';
 import SignUpPage from './components/Signup';
+import HomeworkProvider from './components/HomeworkProvider';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes> {/* Wrap your routes here */}
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/homework" element={<HomeworkPage />} />
-          <Route path="/lecture" element={<LecturePage />} />
-          <Route path="/submission" element={<SubmissionPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUpPage />} />
-
-        </Routes>
-      </div>
-    </Router>
+    <HomeworkProvider>
+      <Router>
+        <div>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/lecture" element={<LecturePage />} />
+            <Route path="/homework" element={<HomeworkPage />} />
+            <Route path="/submission" element={<SubmissionPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUpPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </HomeworkProvider>
   );
 }
 

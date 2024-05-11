@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import HomeworkContext from './HomeworkContext';
 
 function HomeworkPage() {
+  const { assignHomework } = React.useContext(HomeworkContext);
   const [homework, setHomework] = useState('');
   const [homeworkAssigned, setHomeworkAssigned] = useState(false);
 
   const handleAssignHomework = () => {
     // Logic to assign homework, like sending data to backend
+    assignHomework(homework);
     setHomeworkAssigned(true);
   };
 

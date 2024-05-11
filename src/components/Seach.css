@@ -1,0 +1,16 @@
+.serch-main{
+    display:inline-flex;
+}
+
+.serch-input{
+    margin-top:1rem;
+    
+    
+    
+}
+
+.serch-btn{
+    
+    margin-top: 1rem;
+    background-color:#0d6efd;
+}

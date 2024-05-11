@@ -1,5 +1,6 @@
 import './Home.css'
 import React from 'react';
+import Search from './Search';
 
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
           <div className='name-home'>
             <div className='name-title'><h1>WebClass</h1></div>
             <div className='name-para'><p> Welcome to our E learning platform. It is built for students for online education. This website is created by Amey Nevarekar.</p></div>
+            <div><Search/></div>
           </div>
         </div>
 
